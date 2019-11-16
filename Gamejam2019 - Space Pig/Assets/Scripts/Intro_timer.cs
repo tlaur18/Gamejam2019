@@ -27,7 +27,7 @@ public class Intro_timer : MonoBehaviour
         timer += Time.deltaTime;
         if ((text_counter == 0) && (timer >= 10))
         {
-            oc.text = "Many accepted it, by I wanted more. I made a failsafe plan, assassinating a rich CEO and fleeing by giving up my body and fleeing to a clone using Wireless Mind Transplantation.";
+            oc.text = "Many accepted it, but I wanted more. I made a failsafe plan, assassinating a rich CEO and fleeing by giving up my body and fleeing to a clone using Wireless Mind Transplantation.";
 
             text_counter = 1;
             timer = 0;
@@ -35,7 +35,7 @@ public class Intro_timer : MonoBehaviour
 
         if ((text_counter == 1) && (timer >= 10))
         {
-            oc.text = "The plan executed flawlessly, until the WMT. The transmission got hijacked, and my mind was implanted in a pig by the CEOs accomplices. Then they left me in a cage, ready to be transported to the slaughterhouse.";
+            oc.text = "The plan executed flawlessly, until the Mind Transplantation. The transmission got hijacked, and my mind was implanted in a pig by the CEOs accomplices. They then left me in a cage, ready to be transported to the slaughterhouse.";
 
             text_counter = 2;
             timer = 0;
@@ -45,6 +45,12 @@ public class Intro_timer : MonoBehaviour
         {
             oc.text = "But I managed to escape...";
 
+            text_counter = 3;
+            timer = 0;
+        }
+
+        if ((text_counter == 3) && (timer >= 2))
+        {
             SceneManager.LoadScene(sceneName: "hydroponics");
         }
     }

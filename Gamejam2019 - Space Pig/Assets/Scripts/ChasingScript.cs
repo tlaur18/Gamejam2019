@@ -13,11 +13,15 @@ public class ChasingScript : MonoBehaviour
     Transform transform;
 
     private bool walking = true;
+    private bool noticed = false;
+
+    AudioSource audioSource;
 
     // Start is called before the first frame update
     void Start()
     {
         transform = GetComponent<Transform>();
+        audioSource = GetComponent<AudioSource>();
         Physics2D.IgnoreCollision(transform.GetComponent<Collider2D>(), player.GetComponent<Collider2D>());
     }
 
@@ -39,11 +43,20 @@ public class ChasingScript : MonoBehaviour
 
         if (Math.Abs(enemyPosition.x - playerPosition.x) > viewRange)
         {
+            noticed = false;
+
             return;
         }
 
         if (playerPosition.x > enemyPosition.x)
         {
+            if (!noticed)
+            {
+                noticed = true;
+
+                audioSource.Play(0);
+            }
+
             if (m_FacingRight == false)
             {
                 Flip();

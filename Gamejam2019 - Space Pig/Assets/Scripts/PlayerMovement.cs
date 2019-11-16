@@ -16,10 +16,14 @@ public class PlayerMovement : MonoBehaviour
     private float furthedstPlayerXPosition = 0f;
     public float pxlsPlayerIsAllowedToGoBack = 10f;
 
+    // Audio variables are added
+    AudioSource jumpsqueek;
+
     // Start is called before the first frame update
     void Start()
     {
-
+        var aSources = GetComponents<AudioSource>();
+        jumpsqueek = aSources[0];
     }
 
     // Update is called once per frame
@@ -30,6 +34,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W))
         {
             jump = true;
+            jumpsqueek.Play(0);
         }
     }
 

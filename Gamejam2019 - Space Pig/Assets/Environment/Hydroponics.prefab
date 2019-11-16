@@ -41,19 +41,55 @@ Tilemap:
   m_GameObject: {fileID: 2619462773565193804}
   m_Enabled: 1
   m_Tiles:
-  - first: {x: -1, y: 0, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 4294967295
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      m_AllTileFlags: 1073741825
   - first: {x: -2, y: 1, z: 0}
     second:
       serializedVersion: 2
       m_TileIndex: 0
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: -1, y: 1, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 1
+      m_TileSpriteIndex: 1
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: 0, y: 1, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 2
+      m_TileSpriteIndex: 2
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: 1, y: 1, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: 2, y: 1, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 4
+      m_TileSpriteIndex: 4
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: 3, y: 1, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 5
       m_TileSpriteIndex: 4294967295
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
@@ -61,11 +97,31 @@ Tilemap:
       m_AllTileFlags: 1073741825
   m_AnimatedTiles: {}
   m_TileAssetArray:
-  - m_RefCount: 2
+  - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: eaed0dd443cd8624687c276d0be3cdaa, type: 2}
-  m_TileSpriteArray: []
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: b52793e51d737fa479ec58cef0d279d4, type: 2}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: 31b00225bb4d1554e9350ff7c52c5c8e, type: 2}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: 5674c55ce6b421b4d9acf898f2a6463c, type: 2}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: 110cf97b5c58d0f4ba6e08f77a29c46c, type: 2}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: 447177cff2f7ae0489ee3700eb36448a, type: 2}
+  m_TileSpriteArray:
+  - m_RefCount: 1
+    m_Data: {fileID: 21300000, guid: 8939d9e1b43bb724c81f80eae859fa0e, type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: 21300000, guid: 740eb1983460e59469ca9fa486cbff0e, type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: 21300000, guid: 534419771d6348f41a0056a666528896, type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: 21300000, guid: 609733ac7e31d2a47bcbd202dc14e1d9, type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: 21300000, guid: 494ee5b3abc11e343a89e5ed367ca429, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 2
+  - m_RefCount: 6
     m_Data:
       e00: 1
       e01: 0
@@ -84,13 +140,15 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 2
+  - m_RefCount: 6
     m_Data: {r: 1, g: 1, b: 1, a: 1}
+  - m_RefCount: 0
+    m_Data: {r: -6.3260956, g: -6.3260956, b: -6.3260956, a: -6.3260956}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Origin: {x: -2, y: 0, z: 0}
-  m_Size: {x: 2, y: 2, z: 1}
+  m_Size: {x: 9, y: 7, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
   m_TileOrientation: 0
   m_TileOrientationMatrix:
@@ -168,7 +226,7 @@ GameObject:
   - component: {fileID: 1037125258221121885}
   - component: {fileID: 6213276583164869188}
   m_Layer: 31
-  m_Name: New Palette
+  m_Name: Hydroponics
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

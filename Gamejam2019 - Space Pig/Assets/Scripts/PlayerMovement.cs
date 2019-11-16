@@ -55,7 +55,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (collider.gameObject.layer.Equals(10))
         {
-            SceneManager.LoadScene("SampleScene");      //TODO - Show death screen or something.
+            SceneManager.LoadScene("Hydroponics");      //TODO - Show death screen or something.
         }
     }
 }

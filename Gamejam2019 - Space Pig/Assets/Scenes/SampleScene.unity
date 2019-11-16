@@ -817,6 +817,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7813820078302542033, guid: ba92ce9cd96ddec4bb11fccd708d0d9a,
+        type: 3}
+      propertyPath: pxlsPlayerIsAllowedToGoBack
+      value: 17
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ba92ce9cd96ddec4bb11fccd708d0d9a, type: 3}
 --- !u!1001 &8264275173689321755

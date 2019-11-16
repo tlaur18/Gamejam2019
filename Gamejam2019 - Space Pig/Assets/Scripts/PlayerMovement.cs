@@ -8,9 +8,13 @@ public class PlayerMovement : MonoBehaviour
 
     public CharacterController2D controller;
 
-    public float runSpeed = 40f;
+    public float runSpeed = 60f;
     float horizontalMove = 0f;
     bool jump = false;
+
+    //To make sure the player does not move further back than the screen can show
+    private float furthedstPlayerXPosition = 0f;
+    public float pxlsPlayerIsAllowedToGoBack = 10f;
 
     // Start is called before the first frame update
     void Start()
@@ -31,8 +35,20 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate()
     {
+        // Checks if the player is allowed to go further back
+        if (gameObject.transform.position.x < furthedstPlayerXPosition - pxlsPlayerIsAllowedToGoBack && horizontalMove < 0)
+        {
+            horizontalMove = 0;
+        }
+
         controller.Move(horizontalMove * Time.fixedDeltaTime, false, jump);
         jump = false;
+
+        // Sets the players furthest position it has ever had
+        if (gameObject.transform.position.x > furthedstPlayerXPosition)
+        {
+            furthedstPlayerXPosition = gameObject.transform.position.x;
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collider)

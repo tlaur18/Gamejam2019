@@ -15,7 +15,7 @@ public class Numpad_Minigame_Codes : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        code = Random.Range(0, 9999);
+        code = Random.Range(1000, 9999);
         ic = GetComponent<TextMeshPro>();
         ic.text = "";
 

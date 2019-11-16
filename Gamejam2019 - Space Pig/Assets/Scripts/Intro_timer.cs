@@ -51,7 +51,17 @@ public class Intro_timer : MonoBehaviour
 
         if ((text_counter == 3) && (timer >= 2))
         {
-            SceneManager.LoadScene(sceneName: "hydroponics");
+            ChangeScene();
         }
+
+        if (Input.anyKeyDown)
+        {
+            ChangeScene();
+        }
+    }
+
+    private void ChangeScene()
+    {
+        SceneManager.LoadScene(sceneName: "hydroponics");
     }
 }

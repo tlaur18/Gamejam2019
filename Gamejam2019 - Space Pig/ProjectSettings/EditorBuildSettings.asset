@@ -4,5 +4,14 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Levels/Hydroponics.unity
+    guid: 9425ab3511651d24dbd39916314b4afb
+  - enabled: 1
+    path: Assets/Scenes/Numpad_Minigame_loadingscreen.unity
+    guid: 926bd0a68a1a7084f882afdfd7303acf
+  - enabled: 1
+    path: Assets/Scenes/Numpad_Minigame.unity
+    guid: cebc9bb834f21e644ae33c2eecb67a57
   m_configObjects: {}

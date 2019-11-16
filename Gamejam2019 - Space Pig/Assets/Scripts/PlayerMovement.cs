@@ -57,5 +57,10 @@ public class PlayerMovement : MonoBehaviour
         {
             SceneManager.LoadScene("Hydroponics");      //TODO - Show death screen or something.
         }
+
+        if (collider.gameObject.layer.Equals(11))
+        {
+            SceneManager.LoadScene("Numpad_Minigame_loadingscreen");      //TODO - Show death screen or something.
+        }
     }
 }

@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/IntroScene.unity
+    guid: f36757a49b833a64aa9e7207af1f5cdd
+  - enabled: 1
     path: Assets/Scenes/Levels/Hydroponics.unity
     guid: 9425ab3511651d24dbd39916314b4afb
   - enabled: 1
@@ -14,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Numpad_Minigame.unity
     guid: cebc9bb834f21e644ae33c2eecb67a57
+  - enabled: 1
+    path: Assets/Scenes/Level2_loadingscreen.unity
+    guid: 2a558b782659919429067a3845c011b6
   m_configObjects: {}

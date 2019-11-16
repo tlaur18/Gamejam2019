@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class Numpad_Minigame_Codes : MonoBehaviour
 {
@@ -27,7 +28,7 @@ public class Numpad_Minigame_Codes : MonoBehaviour
     {
         if (input_code == code.ToString())
         {
-            // Win condition
+            SceneManager.LoadScene(sceneName: "Level2_loadingscreen");
         }
         else if (input_code.Length > 12)
         {

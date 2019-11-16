@@ -21,6 +21,10 @@ public class Numpad_Minigame_Trigger : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
+            if (Numpad_Minigame_Codes.input_code == "ERROR!")
+            {
+                Numpad_Minigame_Codes.input_code = "";
+            }
             switch (trigger_button.name)
             {
                 case "Button_1":
@@ -54,12 +58,16 @@ public class Numpad_Minigame_Trigger : MonoBehaviour
                     Numpad_Minigame_Codes.input_code += "0";
                     break;
                 case "Button_Star":
+                    Numpad_Minigame_Codes.input_code += "*";
                     break;
                 case "Button_Pound":
+                    Numpad_Minigame_Codes.input_code += "#";
                     break;
                 case "Button_AlertGuards1":
+                    Numpad_Minigame_Codes.input_code = "Guard coming";
                     break;
                 case "Button_AlertGuards2":
+                    Numpad_Minigame_Codes.input_code = "Guard coming";
                     break;
 
                 default:

@@ -8,7 +8,7 @@ public class Numpad_Minigame_Codes : MonoBehaviour
     public TextMeshPro ic;
     public TextMeshPro oc;
 
-    public static string input_code = "0";
+    public static string input_code = "";
     private int code;
 
     // Start is called before the first frame update

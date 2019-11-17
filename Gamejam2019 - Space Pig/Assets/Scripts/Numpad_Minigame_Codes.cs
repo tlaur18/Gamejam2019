@@ -30,7 +30,7 @@ public class Numpad_Minigame_Codes : MonoBehaviour
         {
             SceneManager.LoadScene(sceneName: "Level2_loadingscreen");
         }
-        else if (input_code.Length > 12)
+        else if (input_code.Length > 3)
         {
             input_code = "ERROR!";
         }

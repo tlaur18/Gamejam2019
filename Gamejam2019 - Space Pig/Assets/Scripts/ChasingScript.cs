@@ -17,6 +17,8 @@ public class ChasingScript : MonoBehaviour
 
     AudioSource audioSource;
 
+    public Animator animator;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,7 +30,7 @@ public class ChasingScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     private void FixedUpdate()
@@ -44,6 +46,11 @@ public class ChasingScript : MonoBehaviour
         if (Math.Abs(enemyPosition.x - playerPosition.x) > viewRange)
         {
             noticed = false;
+
+            if (animator != null)
+            {
+                animator.SetBool("isWalking", false);
+            }
 
             return;
         }
@@ -70,6 +77,11 @@ public class ChasingScript : MonoBehaviour
                 Flip();
             }
             transform.position += Vector3.left * speed;
+        }
+
+        if (animator != null)
+        {
+            animator.SetBool("isWalking", true);
         }
     }
 

@@ -48,15 +48,15 @@ public class ChasingScript : MonoBehaviour
             return;
         }
 
+        if (!noticed)
+        {
+            noticed = true;
+
+            audioSource.Play(0);
+        }
+
         if (playerPosition.x > enemyPosition.x)
         {
-            if (!noticed)
-            {
-                noticed = true;
-
-                audioSource.Play(0);
-            }
-
             if (m_FacingRight == false)
             {
                 Flip();

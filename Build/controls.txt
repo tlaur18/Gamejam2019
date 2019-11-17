@@ -1,0 +1,6 @@
+Up: W
+Right: D
+Down: S
+Left: A
+
+Activate: Space

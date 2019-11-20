@@ -18,7 +18,7 @@ TagManager:
   - Enemies
   - Exit
   - Background 2
-  - 
+  - Lasers
   - 
   - 
   - 
@@ -49,4 +49,7 @@ TagManager:
     locked: 0
   - name: Enemies
     uniqueID: 119406025
+    locked: 0
+  - name: Lasers
+    uniqueID: 2590576627
     locked: 0
